@@ -3,17 +3,44 @@
   <head>
     <title></title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1 id="title">Curriculum Vitae</h1>
-    <p>
+    <p id="description">
       Fill the gaps with your personal information
     </p>
     <fieldset>
       <form id="survey-form">
-        <label for="name">Name <input id="name" type="text" /></label>
-        <label for="email">Email <input id="email" type="email" /></label>
-        <label>Age <input type="number" /></label>
+        <label for="name" id="name-label" >Name</br><input id="name" type="text" placeholder="Type your name..." required /></label>
+        <label for="email" id="email-label" >Email</br><input id="email" type="email" placeholder="Type your email..." required/></label>
+        <label for="number" id="number-label" >Age</br><input id="number" type="number" min="16" max="120" placeholder="Type your age..." /></label></br>
+        <label>Charge
+          <select id="dropdown" class="dropdown">
+            <option>(Choose an option)</option>
+            <option>Front-End Developer</option>
+            <option>Back-End Developer</option>
+            <option>Full-Stack Developer</option>
+          </select>
+        </label></br>
+        <label for="morning">
+          <input id="morning" class="inline" type="radio" name="journey" value="morning"/> Morning
+        </label>
+        <label for="evening">
+          <input id="evening" class="inline" type="radio" name="journey" value="evening"/> Evening
+        </label></br>
+        <p class="innerP">
+          What languages do you domain?
+        </p>
+        <label><input class="inline" name="languages" value="html" type="checkbox" />HTML</label>
+        <label><input class="inline"  name="languages" value="css" type="checkbox" />CSS</label>
+        <label><input class="inline" name="languages" value="js" type="checkbox" />JS</label>
+        <label><input class="inline" name="languages" value="java" type="checkbox" />JAVA</label>
+        <label><input class="inline" name="languages" value="python" type="checkbox" />PYTHON</label></br>
+
+        <p class="innerP">Type your qualifications:</p>
+        <textarea placeholder="Type your text here..." rows="6" cols="30" ></textarea></br></br>
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </fieldset>
   </body>
