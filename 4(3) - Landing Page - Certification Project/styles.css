@@ -1,0 +1,341 @@
+:root{
+    --color1: #005a2f;
+    --color2: #a6e65b;
+    --color3: #88b134;
+    --color4: #070705;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-with-vegetarian-food_73378-545.jpg");
+  }
+  
+  div.background-transparency{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  h1{
+    color: var(--color4); 
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    text-shadow: 5px 5px var(--color3);
+  }
+  
+  h3{
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+  }
+  
+  p{
+    color: white;
+    font-size: 14px;
+  }
+
+  /* header */
+  header{
+    height: 50px;
+    width: 100%;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 10px 1px #333;
+  }
+  
+  div.img{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  #header-img{
+    width: 50px;
+  }
+  
+  header div.img h3{
+    color: white;
+  }
+  
+  span.material-symbols-outlined{
+    color: white;
+    font-size: 25px;
+    margin: 0px 10px 5px 25px;
+  }
+  
+  #nav-bar{
+    width: 40%;
+  }
+  
+  nav > ul {
+    margin-top: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover{
+    color: var(--color2);
+  }
+  
+  /* title */
+  div.beVegan{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+  }
+  
+  form{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #email{
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+    height: 40px;
+    border: 4px solid var(--color1);
+    border-radius: 10px;
+  }
+  
+  #submit{
+    background-color: var(--color3);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px #333;
+  }
+  
+  /* reasons */
+  #reasons{
+    height: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  div.reasons-1{
+    width: 650px;
+    height: 140px;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px 1px #333;
+  }
+  
+  .reasons-img{
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.reasons-img span{
+      font-size: 100px;
+  }
+  
+  .reasons-text{
+    height: 140px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  div.rb{
+    background-color: var(--color3);
+  }
+  
+  div.rc{
+    background-color: var(--color1);
+  }
+  
+  /* nutrition */
+  #nutrition{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  #video{
+    border: 20px solid var(--color1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 1px #333;
+  }
+  
+  /* benefits */
+  #benefits{
+    height: 400px;
+    width: 650px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 50px auto;
+  }
+  
+  .benefits-1{
+    width: 200px;
+    height: 400px;
+    background-color: var(--color3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 15px 1px #333;
+  }
+  
+  div.benefits-img{
+    width: 196px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.benefits-img span{
+    font-size: 100px;
+  }
+  
+  .benefits-text{
+    width: 180px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* footer */
+  footer{
+    background-color: var(--color1);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 10px 1px #333;
+  }
+  
+  footer > ul {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 670px){
+  
+    /*Nav bar*/
+    header{
+    height: 90px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    }
+  
+    div.img{
+      justify-content: center;
+    }
+  
+    span.material-symbols-outlined{
+      margin: 0px 10px 5px 0px;
+    }
+  
+    #nav-bar{
+      width: 100%;
+    }
+  
+    nav > ul {
+      height: 35px;
+    }
+  
+    /*Title*/
+    div.beVegan{
+      margin-top: 110px;
+    }
+  
+    /*Reasons*/
+    #reasons{
+    height: 1000px;
+    justify-content: space-between;
+    margin-top: 50px;
+    }
+  
+    div.reasons-1{
+      width: 320px;
+      height: 300px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .reasons-img{
+      width: 100px;
+      height: 100px;
+    }
+  
+    .reasons-text{
+      height: 170px;
+      width: 300px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    /*Benefits*/
+    #benefits{
+    height: 1300px;
+    width: 100%;
+    flex-direction: column;
+    }
+  }

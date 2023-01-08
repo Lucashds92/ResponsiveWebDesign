@@ -1,0 +1,513 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>goVegan</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <!--Fixed bar-->
+    <header id="header">
+      <div class="img">
+        <a href="#" ><img id="header-img" src="https://cdn.pixabay.com/photo/2012/04/11/17/10/leaf-28983_1280.png" /></a>
+        
+        <!--<span class="material-symbols-outlined">
+          eco
+        </span>-->
+        <h3>goVegan</h3>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link"  href="#reasons">reasons</a></li>
+          <li><a class="nav-link" href="#nutrition">nutrition</a></li>
+          <li><a class="nav-link" href="#benefits">benefits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Background transparency-->
+    <div class="background-transparency"></div>
+
+    <!--Title-->
+    <div class="beVegan">
+      <h1>goVegan</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" type="email" id="email" placeholder="type your email here..." required />
+        <input id="submit" type="submit" for="email" value="get started"/>
+      </form>
+    </div>
+
+    <!--Reasons-->
+    <section id="reasons">
+        <div class="reasons-1">
+          <div class="reasons-img">
+            <span class="material-symbols-outlined">
+              vital_signs
+            </span>
+          </div>
+          <div class="reasons-text">
+            <h3>Health</h3>
+            <p>
+              Heart desease is the number one killer.
+              <br>Eating meet increases your risk of heart desease by 50%.
+              <br>Slim down while feeling good.
+            </p>
+          </div>
+        </div>
+        <div class="reasons-1 rb">
+          <div class="reasons-img">
+            <span class="material-symbols-outlined">
+              pets
+            </span>
+          </div>
+          <div class="reasons-text">
+            <h3>Animals</h3>
+            <p>
+              Animals feel fear and pain and want to be free.
+              <br>Cow's milk was created for her calf.
+              <br>If it's wrong to eat a dog, it's wrong to eat a chicken.
+            </p>
+          </div>
+        </div>
+        <div class="reasons-1 rc">
+          <div class="reasons-img">
+            <span class="material-symbols-outlined">
+              nature
+            </span>
+          </div>
+          <div class="reasons-text">
+            <h3>Environment</h3>
+            <p>
+              Grain used for lifestock cold feed the world's hungry.
+              <br>Meet is worse for global warming than cars.
+              <br>Keep Our Trees Tall and Our Oxygen Clear
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!--Nutrition / Video-->
+    <section id="nutrition">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2Uut8vNBfdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <!--Benefits-->
+    <section id="benefits">
+      <div class="benefits-1">
+        <div class="benefits-img">
+          <span class="material-symbols-outlined">
+          restaurant
+          </span>
+        </div>
+        <div class="benefits-text">
+          <h3>Dishes</h3>
+          <p>
+            Going vegan can broaden your horizons, allowing you to try amazing new flavours and recipes. For example, Satay Vegan Sweet Potato curry or crispy vegan quinoa cakes.
+          </p>
+        </div>
+      </div>
+      <div class="benefits-1">
+        <div class="benefits-img">
+          <span class="material-symbols-outlined">
+            mood
+          </span>
+        </div>
+        <div class="benefits-text">
+          <h3>Mood</h3>
+          <p>
+            These can affect your mood and overall stability. Higher antioxidants in fruit and veg, plus carbohydrate rich foods such as oats and brown rice all help with our mental wellbeing.
+          </p>
+        </div>
+      </div>
+      <div class="benefits-1">
+        <div class="benefits-img">
+          <span class="material-symbols-outlined">
+            finance_chip
+          </span>
+        </div>
+        <div class="benefits-text">
+          <h3>Pricing</h3>
+          <p>
+            Meat products are expensive! Whereas vegan base products such as grains, nuts and seeds can be bought in bulk for low prices, with long use by dates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <ul class="ul-footer">
+        <li class="footer-link" ><a href="https://en.wikipedia.org/wiki/Veganism#Definition" target="_blank">article</a></li>
+        <li class="footer-link" ><a href="https://www.worldofvegan.com/vegan-documentaries/" target="_blank">documentaries</a></li>
+        <li class="footer-link" ><a href="https://www.youtube.com/@thenarddogcooks" target="_blank">recipes</a></li>
+      </ul>
+      <p>Copyright 2023, goVEGAN</p>
+    </footer>
+
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+  --color1: #005a2f;
+  --color2: #a6e65b;
+  --color3: #88b134;
+  --color4: #070705;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("https://img.freepik.com/premium-vector/seamless-pattern-with-vegetarian-food_73378-545.jpg");
+}
+
+div.background-transparency{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
+  display: block;
+  margin: 0 auto;
+}
+
+h1{
+  color: var(--color4); 
+  margin-bottom: 10px;
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  text-shadow: 5px 5px var(--color3);
+}
+
+h3{
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+p{
+  color: white;
+  font-size: 14px;
+}
+/* header */
+
+header{
+  height: 50px;
+  width: 100%;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 10px 1px #333;
+}
+
+div.img{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#header-img{
+  width: 50px;
+}
+
+header div.img h3{
+  color: white;
+}
+
+span.material-symbols-outlined{
+  color: white;
+  font-size: 25px;
+  margin: 0px 10px 5px 25px;
+}
+
+#nav-bar{
+  width: 40%;
+}
+
+nav > ul {
+  margin-top: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: var(--color2);
+}
+
+/* title */
+div.beVegan{
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+}
+
+form{
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#email{
+  font-family: 'Montserrat', sans-serif;
+  width: 250px;
+  height: 40px;
+  border: 4px solid var(--color1);
+  border-radius: 10px;
+}
+
+#submit{
+  background-color: var(--color3);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px #333;
+}
+
+/* reasons */
+#reasons{
+  height: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+div.reasons-1{
+  width: 650px;
+  height: 140px;
+  background-color: var(--color2);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px 1px #333;
+}
+
+.reasons-img{
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.reasons-img span{
+    font-size: 100px;
+}
+
+.reasons-text{
+  height: 140px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.rb{
+  background-color: var(--color3);
+}
+
+div.rc{
+  background-color: var(--color1);
+}
+
+/* nutrition */
+
+#nutrition{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#video{
+  border: 20px solid var(--color1);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 1px #333;
+}
+
+/* benefits */
+#benefits{
+  height: 400px;
+  width: 650px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  margin: 50px auto;
+}
+
+.benefits-1{
+  width: 200px;
+  height: 400px;
+  background-color: var(--color3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 5px 5px 15px 1px #333;
+}
+
+div.benefits-img{
+  width: 196px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.benefits-img span{
+  font-size: 100px;
+}
+
+.benefits-text{
+  width: 180px;
+  height: 250px:
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer{
+  background-color: var(--color1);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 10px 1px #333;
+}
+
+footer > ul {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 670px){
+  html{
+    min-width: 350px;
+  }
+
+  /*Nav bar*/
+  header{
+  height: 90px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  }
+
+  div.img{
+    justify-content: center;
+  }
+
+  span.material-symbols-outlined{
+    margin: 0px 10px 5px 0px;
+  }
+
+  #nav-bar{
+    width: 100%;
+  }
+
+  nav > ul {
+    height: 35px;
+  }
+
+  /*Title*/
+  div.beVegan{
+    margin-top: 110px;
+  }
+
+  /*Reasons*/
+  #reasons{
+  height: 1000px;
+  justify-content: space-between;
+  margin-top: 50px;
+  }
+
+  div.reasons-1{
+    width: 320px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reasons-img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .reasons-text{
+    height: 170px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /*Video ?*/
+  #video{
+    
+    
+  }
+
+  /*Benefits*/
+  #benefits{
+  height: 1300px;
+  width: 100%;
+  flex-direction: column;
+  }
+}
+
+** end of undefined **
+
