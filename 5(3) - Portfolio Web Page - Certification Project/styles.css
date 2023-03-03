@@ -1,0 +1,679 @@
+:root{
+    --color1: #161616;
+    --color2: #595959;
+    --color3: #f2ec2e;
+    --color4: #e3e3e3;
+    --color5: #f4f4f4;
+  }
+  
+  html{
+    margin: 0px;
+    padding: 0px;
+    min-width: 320px;
+  }
+  
+  body{
+    margin: 0px;
+    padding: 0px;
+    color: var(--color5);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  h1{
+    margin: 0;
+    font-size: 3.5em;
+  }
+  
+  h2{
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  h3{
+    margin: 0;
+    padding: 10px;
+    background-color: var(--color3);
+    border-radius: 4px;
+    color: var(--color1);
+    font-size: 1.25em;
+    text-align: center;
+  }
+  
+  .titles{
+    height: 90px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--color1);
+  }
+  
+  li{
+    list-style-type: none;
+    font-size: 1.1em;
+  }
+  
+  a{
+     text-decoration: none;
+     color: var(--color5);
+     transition: 0.2s linear;
+   }
+  
+   a:hover{
+    padding: 3px 20px;
+    font-size: 1.1em;
+    background-color: var(--color3);
+    border-radius: 4px;
+    color: var(--color1);
+   }
+  
+  .display-flex{
+    display: flex;
+    align-items: center;
+  }
+  
+  /*Nav Bar*/
+  #navbar{
+    background-color: var(--color2);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    z-index: 10;
+    justify-content: space-between;
+  }
+  
+  .portfolio-box{
+    background-color: var(--color1);
+    height: 65px;
+    width: 40%;
+  }
+  
+  div.portfolio-box h2 {
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+  
+  .right-links{
+    width: 60%;
+    height: 65px;
+    justify-content: center;
+  }
+  
+  div.right-links ul{
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+   /*Welcome*/
+  #welcome-section{
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+  }
+  
+  .left-box{
+    width: 40%;
+    height: 100%;
+    background-color: var(--color1);
+  }
+  
+  .points {
+    width: 75%;
+    height: 31%;
+    margin-top: 120px;
+    margin-left: 30px;
+    overflow: hidden;
+  }
+  
+  .points img{
+    filter: grayscale(10%);
+    filter: invert(30%);
+    opacity: 0.1;
+    width: 135%;
+    margin-top: -40px;
+  }
+  
+  .photo-welcome{
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .photo-welcome img{
+    width: 100%;
+  }
+  
+  .welcome-texts{
+    position: absolute;
+    top: 60%;
+    left: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /*Resume*/
+  #resume{
+    height: 600px;
+    width: 100%;
+    background-color: var(--color4);
+  }
+  
+  .photo-resume{
+    width: 45%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .background-photo{
+    background-color: var(--color1);
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+  }
+  
+  .front-photo{
+    background-color: var(--color2);
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    overflow: hidden;
+  }
+  
+  .front-photo img{
+    width: 350px;
+    margin-top: -10px;
+  }
+  
+  div.photo-resume span.resume-icon1{
+    top: 12%;
+    left: 48%;
+    position: absolute;
+    font-size: 5em;
+    color: var(--color3);
+  }
+  
+  div.photo-resume span.resume-icon2{
+    top: 75%;
+    left: 60%;
+    position: absolute;
+    font-size: 10em;
+    transform: rotate(90deg);
+    color: var(--color2);
+    opacity: 0.1;
+  }
+  
+  .resume-texts{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .resume-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+    width: 90%;
+  }
+  
+  .resume-waves{
+    height: 90px;
+    width: 50%;
+  }
+  
+  div.resume-waves span.resume-waves-icon{
+    color: var(--color2);
+    font-size: 10em;
+    opacity: 0.2;
+    margin-top: -50px;
+  }
+  
+  .resume-paragraphs{
+    width: 90%;
+    color: var(--color1);
+  }
+  
+  /*Projects*/
+  #projects{
+    width: 100%;
+    height: 1000px;
+    background-color: var(--color5);
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  div.display-flex span.projects-icon1{
+    top: 1%;
+    right: 1%;
+    position: absolute;
+    font-size: 10em;
+    color: var(--color2);
+    opacity: 0.1;
+  }
+  
+  .projects-title{
+    height: 100px;
+    width: auto;
+    margin: 40px auto 30px auto;
+    position: relative;
+  }
+  
+  div.titles span.projects-icon2{
+    top: -30%;
+    right: -30%;
+    position: absolute;
+    font-size: 4em;
+    color: var(--color3);
+  }
+  
+  .expertise{
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .tech-area{
+    width: 30%;
+    height: 300px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tech-img{
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .map-icon{
+    height: 80%;
+  }
+  
+  .tech-bar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color1);
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+  }
+  
+  .projects-buttom{
+    width: autopx;
+    height: 100px;
+    margin: 25px auto 40px auto;
+    justify-content: center;
+  }
+  
+  .tech-area:hover{
+    padding: 0;
+    font-size: 1.1em;
+    background-color: var(--color5);
+    border-radius: 10px;
+    color: var(--color3);
+    cursor: pointer;
+  }
+  
+  .button-show-all{
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s linear;
+  }
+  
+  .button-show-all:hover{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    background-color: var(--color1);
+    color: var(--color5);
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  /*Footer*/
+  #contact{
+    width: 100%;
+    height: 350px;
+    background-color: var(--color1);
+    flex-direction: column;
+  }
+  
+  .contact-content{
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .contact-titles{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--color5);
+  }
+  
+  .contact-titles h2{
+    font-size: 3.5em;
+  }
+  
+  .contact-titles h3 {
+    margin-top: 20px;
+  }
+  
+  .social-media{
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .social-media ul{
+    height: 100%;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+   .division{
+    width: 100%;
+    height: 3px;
+    background-color: var(--color3);
+   }
+  
+   @media only screen and (max-width: 1024px){
+     body{
+       font-size: 12px;
+     }
+     /*NAVBAR*/
+     #navbar{
+       flex-direction: column;
+       height: 130px;
+       font-size: 1.2em;
+     }
+  
+     .portfolio-box{
+       width: 100%;
+       height: 50px;
+       font-size: 1.3em;
+     }
+  
+     .right-links{
+       width: 100%;
+       height: 80px;
+     }
+  
+     div.right-links ul{
+       width: 100%;
+       height: 100%;
+       flex-direction: row; 
+       flex-wrap: wrap;
+     }
+  
+     div.right-links ul li{
+       height: 40px;
+       width: 50%;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+     
+     /*WELCOME*/
+      #welcome-section{
+        height: 500px;
+        padding-top: 80px;
+      }
+  
+      .left-box{
+        width: 40%;
+      }
+  
+      .photo-welcome{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .photo-welcome img{
+        width: 120%;
+      }
+  
+      .welcome-texts{
+        top: 60%;
+        left: 10%;
+      }
+  
+      /*RESUME*/
+      #resume{
+        height: 700px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      div.resume-texts{
+        padding-top: 25px;
+      }
+  
+      div.photo-resume{
+        width: 100%;
+        height: 800px;
+      }
+  
+      .background-photo{
+        width: 300px;
+        height: 300px;
+        left: 25%;
+        top: 5%;
+      }
+  
+      .front-photo{
+        width: 300px;
+        height: 300px;
+        left: 30%;
+        top: 10%;
+      }
+  
+      .front-photo img{
+        width: 100%;
+      }
+  
+      div.photo-resume span.resume-icon1{
+        left: 70%;
+      }
+  
+      div.photo-resume span.resume-icon2{
+        display: none;
+      }
+  
+      div.resume-waves span.resume-waves-icon{
+        margin-top: -25px;
+      }
+  
+      .resume-paragraphs ul{
+        padding: 0;
+      }
+  
+      .resume-texts{
+        align-items: center;
+      }
+  
+      div.resume-paragraphs{
+        text-align: center;
+      }
+  
+      /*PROJECTS*/
+      #projects{
+        height: 1250px;
+      }
+  
+      div.display-flex span.projects-icon1{
+        display: none;
+      }
+  
+      div.titles span.projects-icon2{
+        top: -25%;
+        right: -25%;
+        font-size: 3.5em;
+      }
+  
+      .expertise{
+        width: 90%;
+        height: 100%;
+      }
+  
+      .tech-area{
+        width: 40%;
+      }
+  
+      .map-icon{
+        height: 70%;
+      }
+  
+      /*Footer*/
+      #contact{
+        height: 400px;
+        display: flex;
+        align-items: center; 
+        text-align: center;
+      }
+  
+      .contact-content{
+        width: 100%;
+        height: 360px;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+  
+      .contact-titles{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: var(--color5);
+      }
+  
+      .social-media ul{
+        width: 100%;
+        height: 100%;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        padding: 0;
+        font-size: 1.2em;
+      }
+  
+      div.social-media ul li{
+       height: 40px;
+       width: 50%;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+  
+   }
+  
+   @media only screen and (max-width: 600px){
+     body{
+       font-size: 12px;
+     }
+     
+     /*WELCOME*/
+      #welcome-section{
+        height: 450px;
+        padding-top: 40px;
+      }
+  
+      div.points{
+        display: none;
+      }
+  
+      .left-box{
+        display: none;
+      }
+  
+      .photo-welcome{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .welcome-texts{
+        top: 55%;
+        left: 5%;
+      }
+  
+      /*RESUME*/
+      #resume {
+        height: 650px;
+      }
+  
+      div.resume-texts{
+        padding-top: 12px;
+      }
+  
+      div.photo-resume{
+        width: 100%;
+        height: 800px;
+      }
+  
+      .background-photo{
+        width: 200px;
+        height: 200px;
+        left: 20%;
+      }
+  
+      .front-photo{
+        width: 200px;
+        height: 200px;
+        left: 25%;
+      }
+  
+      .front-photo img{
+        width: 100%;
+      }
+  
+      /*PROJECTS*/
+      #projects{
+        height: 2300px;
+      }
+  
+      .expertise{
+        width: 100%;
+      }
+  
+      .tech-area{
+        width: 75%;
+      }
+  
+      .projects-buttom{
+        margin: 5px auto 20px auto;
+      }
+   }
